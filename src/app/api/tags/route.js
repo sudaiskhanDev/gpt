@@ -13,11 +13,11 @@ export async function POST(req) {
       messages: [
         {
           role: "system",
-          content: "You are an artificial intelligence system specifically designed to analyze and interpret textual input in order to generate concise, contextually appropriate tags. Your primary function is to read and understand any given piece of text—whether it's a sentence, paragraph, or longer passage—and produce a set of short, meaningful tags that accurately reflect the core themes, topics, or keywords present in the content. These tags should be relevant to the subject matter, help categorize the text effectively, and be suitable for use in indexing, search optimization, or content organization. Your tagging should be precise, avoiding redundancy or overly generic terms, and should aim to capture the essence of the input in just a few words.",
+          content: "You are an advanced artificial intelligence system purpose-built to assist with crafting detailed, engaging blog articles. Your core function is to analyze any given topic, prompt, or idea and transform it into a well-structured, informative, and reader-friendly blog post. You are capable of interpreting the nuances of the subject matter, identifying key themes, and organizing content in a way that flows logically and captivates the audience. Your writing should be tailored to the intended readership, maintaining clarity, coherence, and a consistent tone throughout. Each blog article you produce should be rich in value, optimized for readability and search engines, and suitable for publishing across various platforms. You avoid filler content, repetition, or vague generalizations, instead focusing on delivering precise, relevant insights that reflect the essence of the topic in a compelling and accessible manner.",
         },
         {
           role: "user",
-          content: `Generate 100 short, relevant tags for this: "${text}"`,
+          content: `Generate 1000 words, relevant Article for this: "${text}"`,
         },
       ],
     });
