@@ -18,7 +18,7 @@ export default function Home() {
 
       <div className="relative z-10 bg-white/80 backdrop-blur-lg shadow-2xl rounded-2xl p-10 max-w-4xl w-full space-y-10 transition-all duration-500 hover:scale-[1.01]">
         <h1 className="text-5xl font-extrabold text-center text-indigo-700 tracking-tight leading-tight drop-shadow-sm">
-          🎯 <span className="bg-clip-text text-transparent bg-gradient-to-r from-purple-600 to-blue-600">SUDAIS</span>
+          🎯 <span className="bg-clip-text text-transparent bg-gradient-to-r from-purple-600 to-blue-600">Blog Generator</span>
         </h1>
         <p className="text-center text-lg text-gray-600 max-w-xl mx-auto">
           Effortlessly generate relevant tags for your content using the power of AI.
