@@ -1,18 +1,31 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import ReactMarkdown from 'react-markdown';
 
 export default function TagsOutput({ tags }) {
-  if (!tags) return null;
+  const [displayedText, setDisplayedText] = useState('');
+  const typingSpeed = 0.5; // milliseconds per character
 
-  const articleContent = tags;
+  useEffect(() => {
+    if (!tags) return;
+
+    let index = 0;
+    const interval = setInterval(() => {
+      setDisplayedText((prev) => prev + tags.charAt(index));
+      index++;
+      if (index >= tags.length) clearInterval(interval);
+    }, typingSpeed);
+
+    return () => clearInterval(interval);
+  }, [tags]);
+
+  if (!tags) return null;
 
   return (
     <div className="mt-6 text-left p-4 bg-gray-50 rounded-lg shadow-inner">
       <h2 className="text-xl font-bold text-indigo-700 mb-4">Generated Detail Article:</h2>
       <div className="prose max-w-none prose-indigo">
-        <ReactMarkdown>{articleContent}</ReactMarkdown>
+        <ReactMarkdown>{displayedText}</ReactMarkdown>
       </div>
     </div>
   );
 }
- 
