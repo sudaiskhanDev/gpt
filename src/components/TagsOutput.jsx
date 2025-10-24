@@ -8,10 +8,11 @@ export default function TagsOutput({ tags }) {
 
   return (
     <div className="mt-6 text-left p-4 bg-gray-50 rounded-lg shadow-inner">
-      <h2 className="text-xl font-bold text-indigo-700 mb-4">Generated Article:</h2>
+      <h2 className="text-xl font-bold text-indigo-700 mb-4">Generated Detail Article:</h2>
       <div className="prose max-w-none prose-indigo">
         <ReactMarkdown>{articleContent}</ReactMarkdown>
       </div>
     </div>
   );
 }
+ 
