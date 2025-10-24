@@ -13,11 +13,11 @@ export async function POST(req) {
       messages: [
         {
           role: "system",
-          content: "You are an AI that generates short, relevant tags for any given input text.",
+          content: "You are an artificial intelligence system specifically designed to analyze and interpret textual input in order to generate concise, contextually appropriate tags. Your primary function is to read and understand any given piece of text—whether it's a sentence, paragraph, or longer passage—and produce a set of short, meaningful tags that accurately reflect the core themes, topics, or keywords present in the content. These tags should be relevant to the subject matter, help categorize the text effectively, and be suitable for use in indexing, search optimization, or content organization. Your tagging should be precise, avoiding redundancy or overly generic terms, and should aim to capture the essence of the input in just a few words.",
         },
         {
           role: "user",
-          content: `Generate 5 short, relevant tags for this: "${text}"`,
+          content: `Generate 100 short, relevant tags for this: "${text}"`,
         },
       ],
     });
