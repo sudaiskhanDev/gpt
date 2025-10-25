@@ -28,7 +28,7 @@ export async function POST(req) {
         },
         {
           role: "user",
-          content: `Generate 1000 words, relevant Article for this: "${text}"`,
+          content: `Generate 10000 words, relevant Article for this: "${text}"`,
         },
       ],
     });

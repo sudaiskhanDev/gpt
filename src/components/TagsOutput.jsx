@@ -21,8 +21,8 @@ export default function TagsOutput({ tags }) {
   if (!tags) return null;
 
   return (
-    <div className="mt-6 text-left p-4 bg-gray-50 rounded-lg shadow-inner">
-      <h2 className="text-xl font-bold text-indigo-700 mb-4">Generated Detail Article:</h2>
+    <div className="mt-6 text-left p-4 text=white bg-gray-700 text-white border rounded-lg shadow-inner">
+      <h2 className="text-xl font-bold text-indigo-300 mb-4">Generated Detail Article:</h2>
       <div className="prose max-w-none prose-indigo">
         <ReactMarkdown>{displayedText}</ReactMarkdown>
       </div>

@@ -22,7 +22,7 @@ export default function TagInputForm({ onGenerate }) {
   };
 
   return (
-    <form onSubmit={handleSubmit} className="flex flex-col gap-4 max-w-md mx-auto mt-10">
+    <form onSubmit={handleSubmit} className="flex flex-col gap-4 max-w-md  text-white mx-auto mt-10">
       <textarea
         className="border border-gray-400 p-3 rounded-lg"
         rows={3}
