@@ -2,6 +2,8 @@
 import { useState } from "react";
 import TagInputForm from "@/components/TagInputForm";
 import TagsOutput from "@/components/TagsOutput";
+import Header from "@/components/Header"
+import Navbar from "@/components/Navbar";
 
 export default function Home() {
   const [tags, setTags] = useState("");
@@ -11,7 +13,10 @@ export default function Home() {
   };
 
   return (
-    <main className="min-h-screen flex items-center justify-center p-6 text-gray-800 font-sans relative overflow-hidden">
+    <>
+    <Navbar />
+   <Header />
+    <div className="min-h-screen flex items-center justify-center p-6 text-gray-800 font-sans relative overflow-hidden">
       {/* Animated background blobs */}
       <div className="absolute top-0 left-0 w-72 h-72 bg-purple-300 rounded-full mix-blend-multiply filter blur-3xl opacity-30 animate-pulse"></div>
       <div className="absolute bottom-0 right-0 w-72 h-72 bg-blue-300 rounded-full mix-blend-multiply filter blur-3xl opacity-30 animate-pulse delay-1000"></div>
@@ -30,6 +35,8 @@ export default function Home() {
           <TagsOutput tags={tags} />
         </div>        
       </div>
-    </main>
+    </div>
+
+    </>
   );
 }
