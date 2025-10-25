@@ -4,6 +4,9 @@ import TagInputForm from "@/components/TagInputForm";
 import TagsOutput from "@/components/TagsOutput";
 import Header from "@/components/Header"
 import Navbar from "@/components/Navbar";
+import Cards from "@/components/Cards";
+import CarouselDemo from "@/components/CarouselDemo";
+
 
 export default function Home() {
   const [tags, setTags] = useState("");
@@ -16,6 +19,8 @@ export default function Home() {
     <>
     <Navbar />
    <Header />
+   <Cards />
+   <CarouselDemo />
     <div className="min-h-screen flex items-center justify-center p-6 text-gray-800 font-sans relative overflow-hidden">
       {/* Animated background blobs */}
       <div className="absolute top-0 left-0 w-72 h-72 bg-purple-300 rounded-full mix-blend-multiply filter blur-3xl opacity-30 animate-pulse"></div>
